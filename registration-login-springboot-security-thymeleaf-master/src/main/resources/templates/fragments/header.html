@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+
+    <div th:fragment="header-meta" th:remove="tag">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </div>
+
+    <div th:fragment="header-css" th:remove="tag">
+        <link rel="stylesheet" th:href="@{/css/fonts.css}"
+              href="../css/fonts.css"/>
+        <link rel="stylesheet" th:href="@{/css/production.css}"
+              href="../css/production.css"/>
+        <link rel="stylesheet" th:href="@{/css/style.css}"
+              href="../css/style.css"/>
+        <link rel="stylesheet" th:href="@{/css/toastr.min.css}"
+              href="../css/toastr.min.css">
+        
+        <link rel="stylesheet" th:href="@{/css/toastr.min.css}"
+              href="../css/lato.css">      
+              
+    </div>
+
+</head>
+
+<body>
+<div th:fragment="header" th:remove="tag">
+    <!--=====================================
+    HEADER
+    ======================================-->
+    <header class="container main-header">
+        <div class="row">
+            <div class="col-12">   
+   				<a href="#" class="education-link-logo">
+					<img src="../img/logo.png" alt="Logo Latitud 90">
+				</a>         
+                <span class="admin-header-title">
+
+            </div>
+        </div>
+    </header>
+    <!--====  End header  ====-->
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+
+</head>
+
+<body>
+    <div th:fragment="buscador" class="container-search-engine">
+        <div class="container clearfix">
+            <div class="clearfix menu-ppal">
+                <!--Menu principal-->
+                <a href="javascript:;" id="menu-icon"><img src="../../img/menu.png"></a>
+                <span sec:authorize="isAuthenticated()" class="admin-login-name text-right">
+					<a th:href='@{/logout}' class="admin-close-sesion option-align-header logout" style="margin-right: -64px;" sec:authorize="isAuthenticated()">Cerrar sesi�n</a>
+                </span>
+
+
+                <a th:href='@{/logout}' sec:authorize="isAuthenticated()" class="admin-close-sesion-mb" style="margin-left: 12px;">
+                    <img src="../img/ico-cerrar.png" alt="">
+                </a>
+                <ul class="clearfix main-nav-container">
+                    <li sec:authorize="hasAnyAuthority('Adm SA,Administrador,Ventas,Operaciones,Contabilidad,Pago')">
+                        <a href="javascript:;" class="resaltar main-nav">Negocio</a>
+                        <ul>
+                            <li sec:authorize="hasAnyAuthority('Adm SA,Administrador,Ventas,Operaciones,Contabilidad,Pago')"><a th:href='@{/bussines/admin-business}'>Buscar</a></li>
+                            <li sec:authorize="hasAnyAuthority('Adm SA,Administrador,Ventas')"><a th:href='@{/bussines/admin-create-business}'>Cotizar</a></li>
+                        </ul>
+                    </li>
+                    <li sec:authorize="hasAnyAuthority('Adm SA,Administrador,Pago,Operaciones')">
+                        <a href="javascript:;" class="resaltar main-nav">Pagos</a>
+                        <ul>
+                            <li sec:authorize="hasAnyAuthority('Adm SA,Administrador,Pago,Operaciones')"><a th:href='@{/payment/voucher}'>Registrar Documento</a></li>
+                            <li sec:authorize="hasAnyAuthority('Adm SA,Administrador,Pago,Operaciones')"><a th:href='@{/payment/pay-document}'>Pagar Documento</a></li>
+                            <li sec:authorize="hasAnyAuthority('Adm SA,Administrador,Pago,Operaciones')"><a th:href='@{/softland/transfer}'>Traspaso Softland</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li sec:authorize="hasAnyAuthority('Admin,Administrador,Contabilidad')">
+                        <a href="javascript:;" class="resaltar main-nav">Contabilidad</a>
+                        <ul>
+                        <li sec:authorize="hasAnyAuthority('Adm,Administrador,Contabilidad')"><a th:href='@{/accounting/prepaid-accounting}'>Prepagos</a></li>
+                        <li sec:authorize="hasAnyAuthority('Admin,Administrador,Contabilidad')"><a th:href='@{/conciliation/conciliation-providers}'>Conciliación Doc</a></li>
+                        <li sec:authorize="hasAnyAuthority('Adm SA,Administrador,Contabilidad')"><a th:href='@{/softland/expenses}'>Egresos</a></li>
+                    </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="resaltar main-nav">Reportes</a>
+                        <ul>
+                            <li><a th:href='@{/home}'>Busqueda de Votantes</a></li>
+                            <li sec:authorize="hasAnyAuthority('ADMIN')"><a th:href="@{/registration}">Nuevo Usuario</a></li>
+                            <li><a href="#">Diagramas</a></li>
+                        </ul>
+                    </li>
+                    <li sec:authorize="hasAnyAuthority('Adm SA,Administrador,Operaciones,Contabilidad')">
+                        <a href="javascript:;" class="resaltar main-nav">Administración</a>
+                        <ul>
+                            <li sec:authorize="hasAnyAuthority('Adm SA,Administrador,Operaciones')"><a th:href='@{/service/admin-services}'>Servicios y Tarifas</a></li>
+                            <li sec:authorize="hasAnyAuthority('Adm SA,Administrador,Operaciones')"><a th:href='@{/zonasplaces/admin-zones-and-places}'>Zonas y Lugares</a></li>
+                            <li sec:authorize="hasAnyAuthority('Adm SA,Administrador')"><a th:href='@{/data/admin-customer}'>Clientes</a></li>
+                            <li sec:authorize="hasAnyAuthority('Adm SA,Administrador,Contabilidad')"><a th:href='@{/data/admin-provider}'>Proveedores</a></li>
+                            <li sec:authorize="hasAnyAuthority('Adm SA,Administrador')"><a th:href='@{/user/admin-user}'>Usuarios</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--Menu principal-->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

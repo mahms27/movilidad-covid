@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+					<div class="col-md-12 mt-4"  th:if="${not #lists.isEmpty(permisos)}">
+						<p class="quantity-search-result">Resultados</p>
+					</div>
+					<div class="col-md-12 mt-4" th:if="${not #lists.isEmpty(permisos)}">
+						<div class="table-responsive">
+							<table class="table table-striped table-education-custom">
+								<thead class="thead-education-custom">
+									<tr>
+									<th scope="col" class="text-left">N&uacute;mero de Cedula</th>
+									<th scope="col" class="text-left">Nombre Completo</th>
+									<th scope="col" class="text-left">Tipo</th>
+									<th scope="col" class="text-left">Placa</th>
+									<th scope="col" class="text-left">Entidad</th>
+									<th scope="col" class="text-left">Excepciones</th>
+									<th scope="col" class="text-left">Estado</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr th:each="permiso, iter : ${permisos.content}">
+										<!--  <td class="text-left" th:text="${negocio.consecutivo}" th:attr="id=${negocio.consecutivo}"><span class="item-title">Consecutivo</span></td>-->
+										<td class="text-left" th:attr="id=${permiso.cedula}" th:text="${permiso.cedula}"><span class="item-title">N&uacute;mero de Cedula</span>1140826446</td>
+										<td class="text-left" th:attr="id=${permiso.nombreApellido}" th:text="${permiso.nombreApellido}"><span class="item-title">N&uacute;mero de Cedula</span>1140826446</td>
+										<td class="text-left" th:text="${permiso.tipo}"><span class="item-title">Tipo</span>Tipo</td>
+										<td class="text-left" th:text="${permiso.placa}"><span class="item-title">Placa</span>Placa</td>
+										<td class="text-left" th:text="${permiso.entidad}"><span class="item-title">Entidad</span>Entidad</td>
+										<td class="text-left" th:text="${permiso.excepciones}"><span class="item-title">Excepciones</span>Excepciones</td>
+										<td class="text-left" th:text="${permiso.estado}"><span class="item-title">Estado</span>Estado</td>																																						
+									</tr>	
+								</tbody>
+
+							</table>
+
+						</div>
+						<nav th:if="${permisos.totalPages > 0}" aria-label="Page navigation example">
+						  <ul class="pagination justify-content-end">
+						    <li class="page-item" th:if="${!permisos.isFirst()}">
+						      <a class="page-link" th:onclick="|paginatorBussines('${permisos.size}','${permisos.pageable.pageNumber}','minus')|" aria-label="Previous">
+						        <span aria-hidden="true">&laquo;</span>
+						      </a>
+						    </li>
+						    <li th:each="pageNumber : ${pageNumbers}" th:class="${pageNumber == currentPage}? 'page-item active' : 'page-item'"><a class="page-link" href="javascript: void(0);" th:onclick="|paginatorBussines('${permisos.size}','${pageNumber}')|"
+									        th:text="${pageNumber}">1</a></li>
+						    <li class="page-item" th:if="${permisos.totalPages !=currentPage}">
+						      <a class="page-link" th:onclick="|paginatorBussines('${permisos.size}','${permisos.pageable.pageNumber + 2
+}' ,'sum')|" aria-label="Next">
+						        <span aria-hidden="true">&raquo;</span>
+						      </a>
+						    </li>
+						  </ul>
+						</nav>						
+					</div>
+					<div th:if="${#lists.isEmpty(permisos)}">
+					    <div class="alert alert-warning alert-dismissible fade show" id="tarifasnotfound"  role="alert">
+					        <strong>Atención!</strong> No se encontraron resultados asociados a la consulta.
+					    </div>
+					</div>					
+</html>

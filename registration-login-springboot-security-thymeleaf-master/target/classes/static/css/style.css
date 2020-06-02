@@ -1,0 +1,2867 @@
+body, html {
+	height: 100%;
+}
+
+header.main-header {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.education-link-logo {
+	display: inline-block;
+	width: 140px;
+	vertical-align: middle;
+}
+
+.education-link-logo img {
+		/*width: 100%*/
+	}
+
+.education-portal-name {
+	display: none;
+}
+
+.education-data-login {
+	text-align: right;
+}
+
+.education-data-login * {
+	margin: 0;
+	line-height: 0.9rem;
+}
+
+.education-data-login .education-login-name {
+	font-size: 0.875rem;
+}
+
+.education-data-login .education-login-name span {
+	font-weight: 600;
+}
+
+.education-data-login .education-login-rut {
+	font-size: 0.8125rem;
+}
+
+.education-data-login .education-logout {
+	font-size: 0.875rem;
+	text-decoration: underline;
+	color: #406a8f;
+}
+
+.education-data-login .education-logout:hover {
+	text-decoration: none;
+	color: rgba(64, 106, 143, .7);
+}
+
+.btn-menu {
+	display: block;
+	float: right;
+	margin-top: 0;
+	padding: 15px 12px;
+	width: 45px;
+	height: 45px;
+	background-color: #3f698f;
+}
+
+.btn-menu .icon-bar {
+	display: block;
+	margin-bottom: 4px;
+	height: 2px;
+	width: 100%;
+	background-color: #FFF;
+}
+
+.main-content .main-banner img {
+	content: "";
+}
+
+.education-title-mobile {
+	display: none;
+}
+
+.hidden-content{
+	display: none;
+}
+.background-mobile,
+.education-overlay {
+	display: none;
+}
+
+.education-main-title {
+	margin-bottom: 15px;
+	font-family: ralewayextrabold;
+	font-size: 1.875rem;
+	color: #000;
+}
+
+.education-main-title.only-title:after {
+	display: block;
+	position: relative;
+	margin-top: 10px;
+	width: 100px;
+	height: 5px;
+	background: #000;
+	content: "";
+}
+
+p.education-main-text {
+	margin: 0;
+	font-size: 1rem;
+	color: #000;
+	line-height: normal;
+}
+
+p.education-main-text.sec-regitration {
+	padding-right: 60px;
+}
+
+p.education-main-text:after {
+	display: block;
+	position: relative;
+	margin-top: 10px;
+	width: 100px;
+	height: 5px;
+	background: #000;
+	content: "";
+}
+
+p.education-main-text span {
+	font-weight: bold;
+}
+
+.education-label-input {
+	margin-bottom: 5px !important;
+	font-size: 0.875rem;
+	color: #000;
+}
+
+.form-education {
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.form-education.sec-login {
+	text-align: center;
+}
+
+.education-custom-input {
+  padding: 0.844rem !important;
+  height: 50px;
+  font-size: 0.875rem;
+  border-color: #999;
+  border-radius: 3px;
+}
+
+.btn-ingresar {
+	margin-top: 15px;
+	padding: 10px 20px;
+	min-width: 180px;
+	width: auto;
+	font-size: 1rem;
+	text-align: center;
+	border-radius: 50px;
+	border: none;
+	background-color: #000;
+	color: #fff;
+	cursor: pointer;
+}
+
+button.btn-ingresar[disabled] {
+	background-color: #BBB;
+}
+
+.main-footer .ftext p {
+	margin-bottom: 5px;
+}
+
+.main-footer .ftext p.education-legal-reg {
+	font-size: 0.75rem;
+	font-style: normal;
+	color: #999;
+}
+
+.education-menu-mobile {
+	padding: 10px 0;
+	width: 100%;
+	background-color: #FFF;
+	overflow: hidden;
+}
+
+.education-menu-mobile .education-data-login {
+	text-align: left;
+}
+
+.menu-close {
+	display: inline-block;
+	float: right;
+	width: 45px;
+	height: 45px;
+	background-image: url(../img/ico-close-menu-mobile.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;	
+}
+
+.line-delimiter {
+	padding: 0 10px 10px;
+	border-bottom: 1px solid #eee;
+}
+
+.education-menu {
+	width: 95%;
+	border-right: 1px solid #979797;
+}
+
+.education-menu.mobile {
+	padding-top: 5px;
+	border-right: none;
+}
+
+.education-menu .education-menu-item {
+	padding: 5px 10px;
+}
+
+.education-menu .education-menu-item.active {
+	background-color: #436891;
+}
+
+.education-menu .education-menu-item a {
+	display: block;
+	font-size: 0.875rem;
+	font-weight: 600;
+	text-decoration: none;
+	color: #436891;
+}
+
+.education-menu .education-menu-item.active a {
+	color: #FFF;
+}
+
+.education-menu .education-menu-item a:before {
+	display: inline-block;
+	margin-right: 10px;
+	width: 24px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.education-menu .education-menu-item a.ico-reservation-data:before {
+	content: url(../img/ico-reservation-data.png);
+}
+
+.education-menu .education-menu-item a.ico-medical-record-menu:before {
+	content: url(../img/ico-medical-record.png);
+}
+
+.education-menu .education-menu-item a.ico-data-attorney:before {
+	content: url(../img/ico-data-attorney.png);
+}
+
+.education-menu .education-menu-item a.education-logout:before {
+	content: url(https://vte.latitud90.com/contentassets/img/seleccion-fecha/ico-cerrar.png);
+}
+
+.education-menu .education-menu-item.active a.ico-reservation-data:before {
+	content: url(../img/ico-reservation-data-active.png);
+}
+
+.education-menu .education-menu-item.active a.ico-medical-record-menu:before {
+	content: url(../img/ico-medical-record-active.png);
+}
+
+.education-menu .education-menu-item.active a.ico-data-attorney:before {
+	content: url(../img/ico-data-attorney-active.png);
+}
+
+.container-reservation-data {
+	padding: 25px;
+	margin-top: 20px;
+	text-align: left;
+	background-color: #cacedd;
+	border-radius: 10px;
+}
+
+.content-reservation-data img,
+.content-reservation-data span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.content-reservation-data img {
+	margin-right: 20px;
+	height: 62px;
+	width: 42px;
+}
+
+p.text-reservation-data {
+	margin-bottom: 0;
+	font-size: 0.875rem;
+	text-align: left;
+	color: #000;
+	line-height: 1.25rem;
+}
+
+.text-data-bold {
+	font-family: ralewayextrabold;
+}
+
+.content-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.content-flex-start {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.education-justify-content-end {
+	justify-content: end !important;
+}
+
+.separator {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #b5b9c6;
+}
+
+.option-align-header {
+	float: left;
+	padding: 5px;
+}
+
+
+.simbol-digit-circle {
+	display: inline-block;
+	margin-right: 10px;
+	width: 30px;
+	height: 30px;
+	font-weight: 600;
+	text-align: center;
+	border: 1px solid #436891;
+	border-radius: 50%;
+	line-height: 26px;
+	color: #436891;
+}
+
+.internal-data-container {
+	margin-top: 5px;
+	padding-left: 40px;
+}
+
+.ico-origin-destiny::before {
+	content: url(../img/ico-origin-destiny.png);
+	display: inline-block;
+	margin-right: 15px;
+	width: 19px;
+	height: 64px;
+	vertical-align: middle;
+}
+
+.container-origin-destiny {
+	display: inline-block;
+  height: 64px;
+  vertical-align: middle;
+}
+
+.container-origin-destiny p:first-child {
+	padding-bottom: 13px;
+}
+.container-origin-destiny p:last-child {
+	padding-top: 13px;
+}
+
+.reservation-total {
+	font-size: 1.125rem;
+  font-family: ralewayextrabold;
+}
+
+.reservation-pay-method {
+	display: flex;
+	height: 100px;
+	text-align: center;
+	background-color: #FFF;
+	border: 1px solid #999;
+	border-radius: 3px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-pay-method {
+	margin: 0 !important;
+	font-size: 1rem !important;
+	font-family: ralewayextrabold;
+	color: #436891;
+}
+
+.main-footer {
+	padding: 15px;
+	/*background-color: #000;*/
+}
+
+.w-40 {
+	width: 40%;
+}
+
+.container-info-transfer {
+	margin-top: .5rem;
+}
+
+.content-data-transfer {
+	margin-top: .5rem;
+	width: 50%
+}
+
+.content-legal-transfer {
+	margin-top: .5rem;
+}
+
+.msg-operation-success {
+	display: none;
+	padding: 12px 16px;
+	background-color: #c2f39b;
+}
+
+.container-pay-reservation {
+	display: none;
+}
+
+.msg-operation-success:before {
+	content: url(../img/ico-pay-success.png);
+	float: left;
+	margin-right: 10px;
+}
+
+.msg-operation-success p {
+	padding-left: 42px;
+	margin: 0;
+	color: #669933;
+	line-height: normal;
+}
+
+.msg-operation-success .text-bold-operation-success {
+	padding-top: 5px;
+	margin-bottom: 5px;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.msg-operation-success .text-operation-success {
+	font-size: 0.875rem;
+}
+
+.link-download-cupon-pay {
+	display: inline-block;
+	font-size: 0.875rem;
+	text-decoration: none;
+	color: #436891;
+	line-height: 0.875rem;
+}
+
+.link-download-cupon-pay:before {
+	content: url(../img/ico-download-cupon-pay.png);
+	display: inline-block;
+  margin-right: 10px;
+  width: 24px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+.link-download-cupon-pay span {
+	display: inline-block;
+  vertical-align: middle;
+}
+
+.voucher-pay-reservation {
+	padding: 20px 15px;
+  border: 2px solid #B2B2B2;
+  border-radius: 10px;
+}
+
+.voucher-pay-reservation:after {
+	content: url(../img/watermark-paid.png);
+  position: absolute;
+  display: inline-block;
+  right: 15%;
+  bottom: 5%;
+  width: 177px;
+  height: 172px;
+}
+
+.text-total-pay {
+	font-family: ralewayextrabold;
+	font-size: 1.875rem !important;
+	color: #000;
+}
+
+.container-medical-record {
+	margin: 20px 0;
+}
+
+.heading-section {
+	color: #000;
+}
+
+i.ico-passenger-data,
+i.ico-medical-record {
+	display: inline-block;
+	margin-right: 5px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+i.ico-passenger-data:before {
+	content: url(../img/ico-passenger-data.png);	
+	display: inline-block;
+	height: 26px;
+}
+
+i.ico-medical-record:before {
+	content: url(../img/ico-medical-record.png);
+	display: inline-block;
+	height: 25px;
+}
+
+.heading-section span {
+	font-weight: 600;
+	vertical-align: middle;
+}
+
+.passenger-data {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0;
+	text-transform: uppercase;
+	background-color: #EEE;
+}
+
+.form-check-inline .form-check-input {
+	margin-bottom: 0 !important;
+	width: 0 !important;
+}
+
+.text-head-radio {
+	margin-bottom: 15px;
+}
+
+.form-check-label.form-check-label-l90 {
+	margin-bottom: 10px;
+	color: #000;
+}
+
+.container-radio {
+	display: block;
+  position: relative;
+  padding-left: 23px;
+  margin-bottom: 12px;
+  font-size: 0.875rem;
+  color: #000;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.custom-select.is-invalid, 
+.form-control.is-invalid, 
+.was-validated .custom-select:invalid, 
+.was-validated .form-control:invalid {
+  border-color: #dc3545 !important;
+}
+
+.custom-select.is-invalid:focus, 
+.form-control.is-invalid:focus, 
+.was-validated .custom-select:invalid:focus, 
+.was-validated .form-control:invalid:focus {
+	border-color: #dc3545 !important;
+}
+
+.error {
+	display: block;
+	margin: 0;
+  width: 100%;
+	font-size: 80%;
+  color: #dc3545;
+}
+
+/* Hide the browser's default radio button */
+.container-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 23px;
+    width: 23px;
+    background-color: #FFF;
+    border: 1px solid #999;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container-radio:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container-radio input:checked ~ .checkmark {
+    background-color: #FFF;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container-radio input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container-radio .checkmark:after {
+ 	top: 4px;
+	left: 4px;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background: #436891;
+}
+
+.education-checkbox {
+  border-radius: 5px;
+}
+
+.container-radio .checkmark.education-checkbox:after {
+	top: 3px;
+  left: 8px;
+  width: 7px;
+  height: 12px;
+  border-radius: unset;
+  background: none;
+  border: solid #436891;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.text-alt-check {
+	display: inline-block;
+	font-size: 0.875rem;
+	font-weight: bold;
+	line-height: 23px;
+  color: #000;
+}
+
+.ml-d-30 {
+	margin-left: 30px;
+}
+
+textarea.form-control {
+	border-color: #999;
+  border-radius: 3px;
+  resize: none;
+}
+
+select {
+	display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background: #fff url(../img/arrow-select.png) no-repeat right .75rem center;
+  background-size: 14px 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.documents-download {
+	margin-top: 20px;
+}
+
+.documents-download h3 {
+	margin-bottom: 20px;
+	font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  color: #000;
+}
+
+.documents-download li a {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 0.875rem;
+	text-align: left;
+	color: #000;
+}
+
+.documents-download li a:after {
+	content: url(../img/ico-download-cupon-pay.png);
+	float: right;
+}
+
+.w-40 {
+  width: 40%!important;
+}
+
+.main-footer {
+	display: block !important;
+	margin-top: 0;
+}
+
+/* The Modal (background) */
+.modalNormal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modalContent {
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  width: 60%; /* Could be more or less, depending on screen size */
+  border: 1px solid #888;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* modalContentProvider */
+.modalContentProvider {
+	background-color: #fefefe;
+	margin: 5% auto; /* 15% from the top and centered */
+	padding: 20px;
+	width: 45%; /* Could be more or less, depending on screen size */
+	border: 1px solid #888;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	animation-name: animatetop;
+	animation-duration: 0.4s
+}
+
+/* modalContentDocument */
+.modalContentDocument {
+	background-color: #fefefe;
+	margin: 5% auto; /* 15% from the top and centered */
+	padding: 20px;
+	width: 35%; /* Could be more or less, depending on screen size */
+	border: 1px solid #888;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+}
+
+
+.modalContentNegociosList {
+	background-color: #fefefe;
+	margin: 5% auto; /* 15% from the top and centered */
+	padding: 20px;
+	width: 69%; /* Could be more or less, depending on screen size */
+	border: 1px solid #888;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	animation-name: animatetop;
+	animation-duration: 0.4s
+}
+
+.modalContentChangePassword {
+	background-color: #fefefe;
+	margin: 5% auto; /* 15% from the top and centered */
+	padding: 20px;
+	width: 40%; /* Could be more or less, depending on screen size */
+	border: 1px solid #888;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	animation-name: animatetop;
+	animation-duration: 0.4s
+}
+
+
+.aling-search{
+	margin-left: -20px;
+}
+
+.text-exist-document {
+	margin-left: 90px;
+}
+
+.document-acept {
+	margin-top: 50px;
+}
+
+/* The Close Button */
+.btnCloseModal {
+  display: inline-block;
+  float: right;
+  width: 36px;
+  height: 36px;
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  border: 3px solid #436891;
+  border-radius: 50px;
+  color: #436891;
+  line-height: 25px;
+}
+
+.btnCloseModal:hover,
+.btnCloseModal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+.container-menu-mobile {
+	position: absolute;
+	top: -100%;
+	width: 100%;
+	z-index: 10;
+}
+
+.content-menu-mobile {
+	max-width: none;
+	width: 100%;
+	height: 100%;
+}
+
+.admin-header-title {
+	display: inline-block;
+	margin-left: 40px;
+	vertical-align: middle;
+}
+
+.admin-header-title p {
+	margin: 0;
+	font-size: 1rem;
+	line-height: normal;
+	color: #000;
+}
+
+.admin-header-title p span {
+	font-family: ralewayextrabold;
+	font-size: 1.625rem;
+}
+
+.admin-login-name {
+	display: inline-block;
+  float: right;
+  padding: 13px;
+}
+
+.admin-login-name .admin-name-sesion {
+	margin: 0;
+	font-size: 0.875rem;
+	text-align: right;	
+	color: #000;
+	line-height: normal;
+}
+
+.admin-login-name .admin-name-sesion span {
+	font-family: ralewayextrabold;
+}
+
+.admin-close-sesion {
+	margin: 0;
+	font-size: 0.875rem;
+	text-decoration: underline;
+	color: #f8f9fa;
+}
+
+.admin-close-sesion-mb {
+	display: none;
+}
+
+.container-search-engine {
+	background-color: #335681;
+	border-top: 10px solid #006893;
+}
+
+.bg-admin-search-engine {
+  background-image: url(../img/background-education-admin.jpg);
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.admin-search-engine-title {
+	/*font-family: ralewayextrabold;
+	font-size: 1.875rem;
+	color: #000;
+	*/
+	font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(-45deg, #3db3c5, #274685);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stripe-bottom:after {
+	display: block;
+  position: relative;
+  margin-top: 10px;
+  width: 100px;
+  /*height: 5px;*/
+  background: #274685;
+  content: "";
+}
+
+.admin-title-form {
+	font-family: ralewayextrabold;
+	font-size: 1rem;
+}
+
+.education-append-input {
+	border-right: none;
+}
+
+.education-custom-input-group-text,
+.education-custom-button-append {
+	background-color: #FFF;
+  border-color: #999;
+  border-radius: 3px;
+}
+
+.education-custom-button-append {
+	border-left: none;
+}
+
+.education-custom-button-append:hover {
+    color: #fff;
+    background-color: #406a8f;
+    border-color: #406a8f;
+}
+
+.ico-magnifying-glass {
+	display: inline-block;
+  width: 19px;
+  height: 19px;
+  vertical-align: middle;
+}
+
+.ico-magnifying-glass:after {
+	content: url(../img/ico-magnifying-glass.png);
+}
+
+.education-custom-button-append:hover .ico-magnifying-glass:after {
+	content: url(../img/ico-magnifying-glass-hover.png);
+}
+
+.admin-text-italic {
+	font-style: italic;
+}
+
+.container-btn-type-search {
+	display: none;
+}
+
+.btn-education-type-search {
+	position: relative;
+	display: inline-block;
+  width: 140px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #cacedd;
+  color: #FFF;
+  line-height: 15px;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+}
+
+.btn-education-type-search:hover {
+	color: #FFF;
+}
+
+.btn-education-type-search.active {
+	background-color: #436891;
+}
+
+.btn-education-type-search span {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 60%;
+  width: 75%;
+  margin: -10% 0 0 -37.5%;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.tabContent[data-id="listCourse"],
+.tabContent[data-id="searchPassenger"] {
+	display: block;
+}
+
+.btn-toggle-search {
+	float: right;
+	padding: 10px 0;
+	color: #FFF;
+	line-height: normal;
+}
+
+.btn-toggle-search:hover {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.btn-toggle-search span {
+	font-size: 1.125rem;
+  vertical-align: middle;
+}
+
+.ico-double-arrow {
+	display: inline-block;
+  margin-left: 10px;
+  font-size: 0;
+  vertical-align: middle;
+}
+
+.btn-toggle-search[aria-expanded="false"] .show-search {
+	display: inline-block;
+}
+
+.btn-toggle-search[aria-expanded="false"] .hidden-search {
+	display: none;
+}
+
+.btn-toggle-search[aria-expanded="true"] .show-search {
+	display: none;
+}
+
+.btn-toggle-search[aria-expanded="true"] .hidden-search {
+	display: inline-block;
+}
+
+.btn-toggle-search[aria-expanded="false"] .ico-double-arrow:after {
+	content: url(../img/ico-double-arrow-down.png);
+}
+
+.btn-toggle-search[aria-expanded="true"] .ico-double-arrow:after {
+	content: url(../img/ico-double-arrow-up.png);
+}
+
+div#collapseSearch * {
+  color: #FFF;
+}
+
+div#collapseSearch input {
+	color: #999;
+}
+
+.separator-vertical {
+	border-right: 1px solid #436891;
+}
+
+.quantity-search-result {
+	margin: 0;
+	font-size: 0.875rem;
+}
+
+.table-education-custom td,
+.table-education-custom th {
+	font-size: 0.75rem;
+	text-align: center;
+	border-color: #FFF;
+	vertical-align: middle;
+}
+
+.table-education-custom td.table-text-left {	
+	text-align: left;
+}
+
+.expanded {
+	width: 15%;
+}
+
+.table-education-custom .thead-education-custom th {
+	font-weight: normal;
+	background-color: #436891;
+	color: #FFF;
+}
+
+.table-education-custom .thead-education-custom th:first-child {
+	border-top-left-radius: 5px;
+}
+
+.table-education-custom .thead-education-custom th:last-child {
+	border-top-right-radius: 5px;
+}
+
+.table-education-custom td .item-title {
+	display: none;
+}
+
+.table-education-custom td .link-package-detail {
+	font-weight: bold;
+	text-decoration: underline;
+	color: #436891;
+}
+
+.table-education-custom td .link-package-detail:hover {
+	text-decoration: none;
+}
+
+.table-education-custom input{
+	height: 30px;
+}
+
+.container-data-package {
+	padding: 10px 20px;
+	background-color: #cacedd;
+}
+
+.container-data-package * {
+	font-size: 0.875rem;
+}
+
+.container-data-package span {
+	display: inline-block;
+	margin-right: 5px;
+	font-family: ralewayextrabold;
+}
+
+.mb-custom-5 {
+	margin-bottom: 5px;
+}
+
+.mb-custom-10 {
+	margin-bottom: 10px;
+}
+
+.link-download-all {
+	display: inline-block;
+	float: right;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #436891;
+  line-height: normal;
+}
+
+.link-download-all span {
+	display: inline-block;
+  text-decoration: underline;
+  vertical-align: middle;
+}
+
+.link-download-all:hover span {
+  text-decoration: none;
+}
+
+.ico-download-all-medical-record {
+	display: inline-block;
+  margin-right: 10px;
+  width: 19px;
+  height: 25px;
+  font-size: 0;
+  vertical-align: middle;
+}
+
+.ico-download-all-medical-record:before {
+	content: url(../img/ico-medical-record.png);
+}
+
+.btn-pay-reservation {
+	padding: 8px 23px;
+  font-size: 0.8125rem;
+  background-color: #40ccaf;
+  border-radius: 50px;
+  color: #FFF;
+}
+
+.btn-pay-reservation:hover {
+	background-color: rgba(64, 204, 175, .6);
+	color: #FFF;
+}
+
+.link-download-voucher {
+	display: inline-block;
+	color: #436891;
+  line-height: normal;
+}
+
+.ico-download-voucher {
+	display: inline-block;
+	margin-right: 0;
+	width: 24px;
+	height: 22px;
+  font-size: 0;
+  vertical-align: middle;
+}
+
+.ico-download-voucher:before {
+	content: url(../img/ico-download-cupon-pay.png);
+	display: inline-block;
+}
+
+.text-download-voucher {
+	display: none;
+  text-decoration: underline;
+  vertical-align: middle;
+}
+
+.link-download-medical-record {
+	display: inline-block;
+	color: #436891;
+  line-height: normal;
+}
+
+.ico-download-medical-record {
+	display: inline-block;
+  margin-right: 0;
+  width: 19px;
+  height: 25px;
+  font-size: 0;
+  vertical-align: middle;
+}
+
+.ico-download-medical-record:before {
+	content: url(../img/ico-medical-record.png);
+	display: inline-block;
+}
+
+.text-download-medical-record {
+	display: none;
+  text-decoration: underline;
+  vertical-align: middle;
+}
+
+.text-payment-status {
+	font-weight: bold;
+}
+
+.text-medical-record {
+	color: #999;
+}
+
+.admin-code-reservation {
+	font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.data-reservation {
+	padding: 20px;
+	min-height: 280px;
+  background-color: #EEE;
+}
+
+.data-cost-reservation {
+	padding: 20px;
+	/* min-height: 280px; */
+  background-color: #FFF7D2;
+  border: 1px solid #e6e6e6;
+}
+
+.admin-text-standard {
+	font-size: 0.875rem;
+}
+
+.admin-text-standard span {
+	display: inline-block;
+	font-family: ralewayextrabold;
+	margin-right: -20px;
+}
+
+.admin-text-standard p {
+	margin: 0;
+}
+
+.admin-text-bold {
+	font-weight: bold;
+}
+
+.admin-width-content-text {
+	width: 30%;
+}
+
+.admin-link-standard {
+	display: inline-block;
+  line-height: normal;
+}
+
+.admin-link-standard i {
+	display: inline-block;
+	margin-right: 10px;
+	font-size: 0;
+  vertical-align: middle;
+}
+
+.ico-medical-record {
+	width: 19px;
+  height: 25px;
+}
+
+.ico-medical-record:before {
+	content: url(../img/ico-medical-record.png);
+  display: inline-block;
+}
+
+.admin-text-color-standart {
+  color: #436891;
+}
+
+.admin-link-standard span {
+	display: inline-block;
+	font-size: 0.875rem;
+	text-decoration: underline;
+  vertical-align: middle;
+}
+
+.admin-link-standard:hover span {
+	text-decoration: none;
+}
+
+.ico-cancel-reservation {
+	width: 24px;
+  height: 24px;
+}
+
+.ico-cancel-reservation:before {
+	content: url(../img/ico-cancel-reservation.png);
+  display: inline-block;
+}
+
+.admin-text-color-cancel {
+  color: #CC0000;
+}
+
+.admin-text-color-reintegrar {
+  color: #436891;
+}
+
+.mb-custom-25-dt {
+	margin-bottom: 25px;
+}
+
+.mt-custom-25-dt {
+	margin-top: 25px;
+}
+
+.mb-custom-30 {
+	margin-bottom: 30px;
+}
+
+.mt-custom-20 {
+	margin-top: 20px;
+}
+
+.mt-custom-38 {
+  margin-top: 38px;
+}
+
+.admin-text-total-pay {
+	display: inline-block;
+	font-size: 1.5rem !important;
+	font-weight: bold;
+	line-height: normal;
+}
+
+.btn-register-payment {
+  padding: 5.5px 16px;
+  font-size: 0.8125rem;
+  background-color: #40ccaf;
+  border-radius: 50px;
+  color: #FFF;
+}
+
+.btn-register-payment:hover {
+	background-color: rgba(64, 204, 175, .6);
+	color: #FFF;
+}
+
+.ico-monetary-symbol {
+	display: inline-block;
+  margin-right: 10px;
+  width: 12px;
+  height: 19px;
+  font-size: 0;
+  vertical-align: middle;
+}
+
+.ico-monetary-symbol {
+	content: url(../img/ico-monetary-symbol.png);
+  display: inline-block;
+}
+
+.text-btn-pay {
+	display: inline-block;
+  font-size: 0.875rem;
+  vertical-align: middle;
+}
+
+.container-link-payment-detail {
+	display: flex;
+}
+
+.msg-operation-danger {
+	display: none;
+  padding: 12px 16px;
+  background-color: #CC0000;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+}
+
+.msg-operation-danger:before {
+  content: url(../img/ico-msg-danger.png);
+  float: left;
+  margin-right: 10px;
+}
+
+.msg-operation-danger p {
+    padding-left: 42px;
+    margin: 0;
+    color: #FFF;
+    line-height: normal;
+}
+
+.msg-operation-danger a {
+	padding: 5px 15px;
+	text-decoration: underline;
+	color: #FFF;
+  line-height: normal;
+}
+
+.msg-operation-danger a:hover {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.msg-operation-danger .text-operation-danger {
+  font-size: 0.875rem;
+}
+
+.msg-operation-danger .text-bold-operation-danger {
+  padding-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.msg-operation-info {
+	display: none;
+  padding: 12px 16px;
+  background-color: #436891;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+}
+
+.msg-operation-info:before {
+  content: url(../img/ico-msg-danger.png);
+  float: left;
+  margin-right: 10px;
+}
+
+.msg-operation-info p {
+    padding-left: 42px;
+    margin: 0;
+    color: #FFF;
+    line-height: normal;
+}
+
+.msg-operation-info a {
+	padding: 5px 15px;
+	text-decoration: underline;
+	color: #FFF;
+  line-height: normal;
+}
+
+.msg-operation-info a:hover {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.msg-operation-info .text-operation-danger {
+  font-size: 0.875rem;
+}
+
+.msg-operation-info .text-bold-operation-danger {
+  padding-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.container-link-danger {
+	text-align: right;
+}
+
+.btn-register-payment.disabled {
+	background-color: #999;
+	opacity: unset;
+}
+
+.container-attaching-file {
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: #EEE;
+}
+
+.text-package-status {
+	margin-bottom: 10px;
+	font-size: 1rem;
+  font-family: ralewayextrabold;
+}
+
+.attach-support-text {
+	margin-bottom: 5px;
+  font-size: 0.9375rem;
+}
+
+.content-attach-file {
+  margin-bottom: 20px;
+}
+
+.input-file-upload-Booking {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.input-file-upload-Booking + label {
+  display: inline-block;
+  padding: 7.5px 33.23px;
+ 	margin-top: 15px;
+  font-size: 0.875rem;
+  background-color: #436891;
+  border-radius: 50px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.input-file-upload-Booking:focus + label,
+.input-file-upload-Booking + label:hover {
+  background-color: #006893;
+}
+
+.container-attach-file .form-control:disabled, 
+.container-attach-file .form-control[readonly] {
+  background-color: #FFF;
+  opacity: unset;
+}
+
+.admin-title-login {
+  margin: 0;
+  font-family: ralewayextrabold;
+  font-size: 3rem;
+  line-height: normal;
+  color: #000;
+}
+
+.admin-text-title-login {
+  font-size: 1.9rem;
+  font-weight: bold;
+  line-height: normal;
+  color: #000;
+}
+
+.pt-custom-100-dt {
+	padding-top: 100px;
+}
+
+#adminPassword {
+	font-size: 3rem;
+	font-weight: bold;
+  font-style: normal;
+  color: #999;
+}
+
+.btn-custom-primary {
+	display: inline-block;
+  padding: 7.5px 33.23px;
+  margin: 0;
+  font-size: 0.875rem;
+  background-color: #436891;
+  border-radius: 50px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.btn-custom-primary:hover {
+	background-color: #006893;
+	color: #FFF;
+}
+
+.btn-custom-primary i {
+	display: inline-block;
+  margin-right: 10px;
+  font-size: 0;
+  vertical-align: middle;
+}
+
+.btn-custom-primary span {
+	display: inline-block;
+	line-height: normal;
+  vertical-align: middle;
+}
+
+.name-and-weight {
+	margin: 15px 0 0;
+  font-size: 0.875rem;
+  color: #000;
+}
+
+.name-and-weight span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ico-remove-item {
+	display: inline-block;
+	margin-left: 15px;
+	width: 13px;
+	height: 14px;
+	vertical-align: middle;
+}
+
+.ico-remove-item:before {
+	content: url(../img/ico-remove-item.png);
+	display: inline-block;
+}
+
+a[data-js="uploadList"] {
+	display: none;
+}
+
+.text-payment-method {
+	margin-bottom: 5px;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.radio-standard-custom {
+  position: relative;
+	display: inline-block;
+  width: 23px;
+  height: 23px;
+  padding: 0;
+  margin: 0 5px 0 0;
+  font-size: 0.875rem;
+  color: #000;
+  cursor: pointer;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio-standard-custom input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-standard-custom:hover input ~ .check-mark {
+  background-color: #ccc;
+}
+
+.radio-standard-custom input:checked ~ .check-mark {
+  background-color: #FFF;
+}
+
+.radio-standard-custom input:checked ~ .check-mark:after {
+  display: block;
+}
+
+.check-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #FFF;
+  border: 1px solid #999;
+  border-radius: 50%;
+}
+
+.check-mark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-standard-custom .check-mark:after {
+  top: 4px;
+  left: 4px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #436891;
+}
+
+.text-radio {
+	display: inline-block;
+  font-size: 0.875rem;
+  line-height: normal;
+  vertical-align: middle;
+  color: #000;
+}
+
+.admin-prepend-custom {
+  font-size: 0.875rem;
+  font-style: italic;
+  background-color: #FFF;
+	border-color: #999;
+  border-right: none;
+  color: #999;
+}
+
+.education-prepend-input {
+	/*border-left: none;*/
+	border-top-right-radius: 3px !important;
+  border-bottom-right-radius: 3px !important;
+}
+
+.ml-custom-20-dt {
+	margin-left: 20px;
+}
+
+.education-custom-select {
+	padding: 0.844rem !important;
+  margin-bottom: 10px;
+  height: 50px !important;
+  font-size: 0.875rem;
+  border-color: #999;
+  border-radius: 3px;
+}
+
+.admin-detail-payment {
+	margin-top: 40px;
+}
+
+.container-admin-detail-payment {
+	display: none;
+	transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+}
+
+.mt-custom-15-dt {
+  margin-top: 15px;
+}
+
+.pt-custom-30 {
+	padding-top: 30px;
+}
+
+.input-group>.custom-select:not(:first-child), 
+.input-group>.form-control:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.container-admin-result-transaction {
+	margin-top: 40px;
+}
+
+.title-result-transaction {
+	font-family: ralewayextrabold;
+	font-size: 0.875rem;
+	color: #000;
+	line-height: normal;
+}
+
+.text-result-transaction {
+	margin-bottom: 10px;
+	font-size: 0.8125rem;
+	color: #000;
+	line-height: normal;
+}
+
+.text-result-transaction span {
+	font-weight: bold;
+}
+
+.admin-text-standard p i {
+	display: block;
+  font-style: normal;
+  font-size: 0.75rem;
+  text-align: left;
+  line-height: normal;
+}
+
+.admin-text-total-pay.admin-fz-18 {
+	font-size: 1.125rem !important;
+}
+
+.ico-print-pay {
+	width: 24px;
+	height: 22px;
+}
+
+.ico-print-pay:before {
+	content: url(../img/ico-download-cupon-pay-hover.png);
+  display: inline-block;
+}
+
+.admin-position-atr {
+	position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.container-admin-result-transaction {
+	display: none;
+}
+.modalCreatePassenger{
+	width:50% !important;
+}
+.payment-summary {
+	display: none;
+}
+
+.container-btn-payment-partial {
+	display: none;
+}
+
+.table-borderless tbody+tbody, 
+.table-borderless td, 
+.table-borderless th, 
+.table-borderless thead th {
+  border: 0;
+}
+
+.item-numeral-check {
+	display: inline-block;
+	padding-top: 15px;
+	font-size: 0.875rem;
+	color: #999;
+}
+
+.table-view-checks {
+	display: block;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.table-view-checks .th-custom {
+	padding-bottom: 10px;
+	font-size: 0.8125rem;
+	font-weight: bold;
+	color: #000;
+}
+
+.table-view-checks .td-custom {
+	padding-top: 5px;
+  padding-bottom: 5px;
+	font-size: 0.8125rem;
+	color: #000;
+}
+
+.link-more-checks {
+	display: none;
+	padding-top: 15px;
+}
+
+.dateFullTransaction {
+	display: block;
+  font-family: ralewayregular;
+  font-size: 0.75rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.container-show-more-result {
+	display: none;
+	text-align: center;
+}
+
+.link-more-result {
+	font-size: 0.875rem;
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom: 1px solid #436891;
+	color: #436891;
+	line-height: normal;
+}
+
+.link-more-result:hover {
+	text-decoration: none;
+	color: #436891;
+}
+
+#result-search {
+	display: none;
+	width: 100%;
+}
+
+.componentDataList {
+	display: none;
+	position: absolute;
+	top: 78px;
+	padding: 10px 0;
+	margin-top: 5px;
+	height: auto;
+	width: auto;
+	max-height: 190px;
+	background-color: #FFF;
+	overflow-y: auto;
+	border-radius: 5px;
+	box-shadow: inset 0px 0px 6px 0px #436891;
+	-webkit-box-shadow: inset 0px 0px 6px 0px #436891;
+	-moz-box-shadow: inset 0px 0px 6px 0px #436891;
+	-o-box-shadow: inset 0px 0px 6px 0px #436891;
+	z-index: 1000;
+}
+
+.componentDataList ul {
+	margin: 0;
+}
+
+.componentDataList ul li {
+	padding: 5px 15px;
+}
+
+.componentDataList ul li:hover {
+	background-color: #436891;
+	color: #FFF;
+	cursor: pointer;
+	transition: all .5s ease-in-out;
+}
+
+.componentDataList ul li:hover a {
+	color: #FFF;
+}
+
+#associatedPlaces {
+	display: none;
+	width: 100%;
+}
+
+#assignedServices {
+	display: none;
+	width: 100%;
+}
+
+.variableServices {
+	display: none;
+}
+
+#associatedDestiny {
+	display: none;
+}
+
+#containerQuoteData {
+	display: none;
+}
+
+[data-custom="input"] input, 
+[data-custom="input"] .admin-prepend-custom {
+	height: 30px;
+}
+
+.separator-bottom {
+	border-bottom: 1px solid #436891;
+}
+
+.accordion .btn-link {
+	text-decoration: none;
+}
+
+.accordion .btn-link:hover {
+	text-decoration: underline;
+}
+
+.accordion .card-header {
+	cursor: pointer;
+}
+
+.accordion .card-header:hover .btn-link {
+	text-decoration: underline;
+	color: #4d4d4d;
+}
+
+.letter-uppercase {
+	text-transform: uppercase;
+}
+
+.accordion h2 span {
+    float: right;
+	font-size: 40px;
+    color: #000;
+}
+
+.vr {
+	border-right: 1px solid #ccc !important;
+}
+
+.accordion .card-header[aria-expanded="false"] h2 span:after {
+	content: "\02b";
+}
+
+.accordion .card-header[aria-expanded="true"] h2 span:after {
+	content: "\02d";
+}
+
+@media only screen and (max-width: 1199.98px) {
+	.a-m-m {
+		margin: 0;
+	}
+	
+	.w-25 {
+		width: 35% !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+	.container-data-package span {
+		width: 45%;
+	}
+}
+
+@media only screen and (max-width: 767.98px) {
+
+	.education-link-logo {
+		width: 110px;
+	}
+
+	.education-portal-name {
+		margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+	}
+
+	.education-portal-name p {
+		margin: 0;
+		font-size: 1.25rem;
+		color: #436891;
+		line-height: 1.25rem;
+	}
+
+	.education-portal-name p span {
+		font-family: ralewayextrabold;
+		font-size: 1.5rem;
+	}
+
+	.btn-menu {
+		margin-top: 0;
+	}
+
+	.education-menu {
+		width: 100%;
+	}
+
+	.main-banner {
+		display: none;
+	}
+
+	.main-content {
+		text-align: center;
+		color: #FFF;
+	}
+
+	.background-mobile {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-image: url(../img/background-education-mobile.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-x: 60%;
+		z-index: -1;
+	}
+
+	.education-overlay {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.1);
+		z-index: 0;
+	}
+
+	.education-title-mobile {
+		display: block;
+		margin: 20px 0 30px !important;
+		text-align: center;
+    color: #FFF;
+	}
+
+	.education-title-mobile span {
+		display: block;
+		line-height: 20px;
+	}
+
+	.education-title-mobile span:first-child {
+		font-size: 0.875rem;
+	}
+
+	.education-title-mobile span:last-child {
+		font-family: ralewayextrabold;
+		font-size: 1.5rem;
+	}
+
+	.education-main-title {
+		margin-bottom: 5px;
+		font-family: unset;
+		font-size: 1rem;
+		font-weight: bold;
+		text-align: left;		
+	}
+
+	p.education-main-text {
+		font-size: 0.875rem;
+		text-align: left;
+		line-height: 15px;
+	}
+
+	p.education-main-text.sec-regitration {
+		padding: 0;
+	}
+
+	p.education-main-text.sec-login:after {
+		margin: 10px auto;
+		background-color: #FFF;
+	}
+	
+	h1.education-main-title.sec-login,
+	p.education-main-text.sec-login {
+		text-align: center;
+		color: #FFF;
+	}
+
+	.education-label-input {
+		display: block;
+		font-size: 0.875rem !important;
+		text-align: left;
+	}
+
+	.education-label-input.sec-login {
+		color: #FFF;
+	}
+
+	.main-content .contain-form .btn-ingresar {
+		border: 1px solid #FFF;
+	}
+
+	.main-content .contain-form .btn-ingresar.sec-login {
+		display: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+	}
+
+	.pm-n {
+		padding: 0;
+	}
+
+	.tam-l {
+		text-align: left;
+	}
+
+	.tam-r {
+		text-align: right;		
+	}
+
+	.content-reservation-data img {
+		margin-right: 0;
+		height: 40px;
+		width: 30px;
+	}
+
+	.a-mb-m {
+		margin-bottom: 15px;
+	}
+
+	.container-info-transfer {
+		margin-top: 1.5rem;
+	}
+
+	.content-data-transfer {
+		margin-top: 1.5rem;
+		width: 100%
+	}
+
+	.content-legal-transfer {
+		margin-top: 1.5rem;
+	}
+
+	.msg-operation-success:before {
+		height: 70px;
+	}
+
+	.msg-operation-success p {
+		text-align: left;
+	}
+
+	.msg-operation-success .text-bold-operation-success {
+		font-size: 0.875rem;
+    margin-bottom: 7px;
+	}
+
+	.msg-operation-success .text-operation-success {
+		font-size: 0.75rem;
+	}
+
+	.content-flex-start {
+		align-items: flex-start;
+	}
+
+	.mb-m-10 {
+		margin-bottom: 10px;
+	}
+
+	.separator-mb {
+		width: 100%;
+    border-bottom: 1px solid #b5b9c6;
+	}
+
+	.mt-m-30 {
+		margin-top: 30px;
+	}
+
+	.text-total-pay {
+		font-size: 1.5rem !important;
+	}
+
+	.voucher-pay-reservation:after {
+		content: url(../img/watermark-paid-small.png);
+	  right: 50%;
+	  bottom: 5%;
+	  width: 74px;
+    height: 71px;
+	}
+
+	.ml-d-30 {
+		margin-left: 0;
+	}
+
+	.modalContent {
+		width: 95%;
+	}
+
+	.modalContentProvider{
+		width: 95%;
+	}
+
+
+	.modalContentDocument{
+		width: 95%;
+	}
+
+
+	.modalContentNegociosList{
+		width: 95%;
+	}
+
+	.modalContentChangePassword{
+		width: 95%;
+	}
+
+	.aling-search{
+		margin-left: 55px;
+	}
+
+
+	.text-exist-document {
+		margin-left: 10px;
+	}
+
+	.document-acept {
+		margin-top: 5px;
+	}
+
+
+	.hide-item {
+		display: none !important;
+	}
+
+	.container-show-more-result {
+		display: block;
+	}
+
+	.admin-header-title {
+		margin-left: 5px;
+	}
+
+	.admin-header-title p {
+		font-size: 1rem;
+		color: #436891;
+	}
+
+	.admin-header-title p span {
+		font-size: 1.125rem;
+	}
+
+	.admin-login-name {
+		display: none;
+	}
+
+	.admin-close-sesion-mb {
+		display: inline-block;
+		float: right;
+		margin: 13px 0;
+		width: 30px;
+    	height: 27px;
+	}
+
+	.admin-close-sesion-mb img {
+		width: 100%;
+	}
+
+	.bg-admin-search-engine {
+		background-position: 0;
+	}
+
+	.admin-search-engine-title {
+		font-size: 1.125rem;
+	}
+
+	.container-btn-type-search {
+		display: block;
+	}
+
+	.admin-title-form {
+		font-size: 0.875rem;
+	}
+
+	.tabContent[data-id="searchPassenger"] {
+		display: none;
+	}
+
+	.btn-toggle-search span {
+		font-size: 0.875rem;
+	}
+
+	.separator-vertical {
+		border-right: none;
+	}
+
+	.table-education-custom .thead-education-custom {
+		display: none;
+	}
+
+	.table-education-custom tr {
+		display: inline-block;
+		/* padding: 10px; */
+    width: 100%;
+    border-bottom: 2px solid #FFF;
+	}
+
+	.table-education-custom td {
+		display: block;
+		padding: 0 10px;
+		text-align: left;
+		border: none;
+	}
+
+	.table-danger, .table-danger>td {
+		background-color: #f5c6cb !important;
+	}
+
+	.table-warning, .table-warning>td {
+		background-color: #ffeeba !important;
+	}
+
+	.table-education-custom tr > td:first-child {
+		padding-top: 10px;
+	}
+
+	.table-education-custom tr > td:last-child {
+		padding-bottom: 10px;
+	}
+
+	.table-education-custom td .item-title {
+		display: inline-block;
+    width: 50%;
+    font-weight: bold;
+	}
+
+	td.text-medical-record.td-custom-mobile {
+    padding-left: 0;
+	}
+
+	.mb-custom-5 {
+		margin-bottom: 0;
+	}
+
+	.container-data-package span {
+		margin-right: 0;
+		width: 50%
+	}
+
+	.td-custom-mobile {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+		float: left;
+    padding-bottom: 10px !important;
+    width: 50%;
+    height: 67px;
+    line-height: normal;
+	}
+	
+	.ico-download-voucher,
+	.ico-download-medical-record {
+		margin-right: 10px;
+	}
+
+	.text-download-voucher,
+	.text-download-medical-record {
+		display: inline-block;
+	}
+
+	.mb-custom-25-dt {
+		margin-bottom: 0;
+	}
+
+	.data-cost-reservation {
+		margin-top: 15px;
+	}
+
+	.pt-custom-100-dt {
+		padding-top: 0;
+	}
+
+	.pt-custom-25-mb {
+		padding-top: 25px;
+	}
+
+	.admin-title-login {
+		font-size: 2rem;
+	}
+
+	.admin-text-title-login {
+		font-size: 1.25rem;
+	}
+
+	.text-package-status {
+		font-size: 0.875rem;
+	}
+
+	.attach-support-text {
+		font-size: 0.8125rem;
+	}
+	
+	.ml-custom-20-dt {
+		margin-left: 0;
+	}
+
+	.mt-custom-15-dt {
+    margin-top: 0;
+	}
+
+	.mt-custom-15-tb {
+    margin-top: 15px;
+	}
+
+	.admin-position-atr {
+		position: relative;
+	  top: unset;
+	  right: unset;
+	}
+	
+}
+.transfer-sofland{
+	margin-top: 14%;
+}
+
+.mt-6{
+	margin-top: -2.5rem!important;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+	.content-menu-mobile {
+		max-width: 720px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+	}
+
+	.education-menu-mobile {
+		float: right;
+    margin-right: -1px;
+		width: 250px;
+	}
+
+	.education-menu-mobile .education-data-login {
+		padding-right: 25px;
+		display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+		text-align: right;
+	}
+
+	.education-menu-mobile .line-delimiter {
+		padding: 0 0 10px;
+	}
+
+	.education-menu.mobile {
+		padding-top: 0;
+		width: 100%;
+    background-color: #cacedd;
+	}
+
+}
+
+@media only screen and (max-width: 479.98px) {
+
+	.education-link-logo {
+		width: 77px;
+	}
+
+	.education-portal-name p {
+		font-size: 0.875rem;		
+		line-height: 0.9rem;
+	}
+
+	.education-portal-name p span {
+		font-size: 1rem;
+	}
+
+	.admin-header-title p {
+		font-size: 0.875rem;
+	}
+
+	.admin-header-title p span {
+		font-size: 1rem;
+	}
+
+	.admin-close-sesion-mb {
+		margin: 5px 0;
+	}
+
+	.table-education-custom td {
+		font-size: 0.75rem;
+	}
+
+	.container-data-package {
+		padding: 10px;
+	}
+
+	.container-data-package * {
+	  font-size: 0.75rem;
+	}
+
+	.data-reservation {
+		padding: 10px;
+    min-height: 250px;
+	}
+
+	.data-cost-reservation {
+		padding: 10px;
+    min-height: 250px;
+	}
+
+	.admin-text-standard {
+    font-size: 0.75rem;
+	}
+
+	.mt-custom-15-mb {
+    margin-top: 15px;
+	}
+
+	.admin-text-total-pay {
+		font-size: 1.125rem !important;
+	}
+
+	.bg-admin-search-engine {
+		padding-bottom: 30px;
+    	height: auto;
+	}
+
+}
+
+div#createService {
+	z-index: 2;
+}
+
+.modalChangeState{
+    width: 45% !important;	
+}
+.input-modal-change-state{
+    width: 74% !important;
+    height: 45px !important;
+}
+
+.change-state-select{
+	height: 45px !important;
+	width: 74% !important;
+}
+
+.educacion-bussines-input{
+	/*width: 69px !important;*/
+	width: 45px !important;
+}
+
+
+div#createProvider {
+	z-index: 2;
+}
+
+#menu-icon{
+	display: none;
+}
+.menu-ppal ul{
+	width: fit-content;
+	margin: 0 auto;
+	font-family: ralewayregular;
+}
+.menu-ppal ul li{
+	float: left;
+	text-align: center;
+	position: relative;
+
+}
+.menu-ppal ul .main-nav.active{
+	background-color: #3a6192;
+}
+.menu-ppal ul li a{
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	font-family: ralewayregular;
+	
+	
+}
+.menu-ppal ul li ul{
+	display: none;
+}
+.menu-ppal ul li ul.active{
+	display: block;
+	position: absolute;
+	background-color: #3a6192;
+	min-width: 200px;
+	z-index: 1000;
+	
+}
+.menu-ppal ul li ul li{
+	float: none;
+	text-align: left;
+}
+.menu-ppal ul li ul li:hover{
+	background-color: #294567;			
+}
+@media screen and (max-width: 991px){
+	.menu-ppal ul{
+		width: 100%;
+		display: none;
+	}
+	.menu-ppal ul li{
+		float: none;
+		width: 100%;
+		text-align: left;
+	}
+	.menu-ppal ul li ul.active{
+		display: block;
+		position: relative;
+		background-color: #3a6192;
+		width: 100%;				
+		left: 0px;
+	}
+	.menu-ppal ul li ul li{
+		padding-left: 20px;
+	}
+	#menu-icon{
+		display: block;
+	}
+	#menu-icon img{
+		width: 42px;
+		padding: 10px;
+	}
+}
+
+.resaltar{
+	font-weight: bold;
+}
+
+.table-quoted{
+	width: 50% !important;
+}
+/* Remove spin input type number*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield;}
+
+.mostrarMensajeCargaMasiva{
+	display: block;
+}
+
+.ocultarMensajeCargaMasiva{
+	display: none;
+}
+
+.pasajeroEsLiberado{
+	cursor: pointer;
+}
+
+
+/* tooltips*/
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color:#FFF7D2;
+  color: #212529;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup-observaciones {
+	word-wrap: break-word;
+	width: 80px !important;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #FFF7D2 transparent transparent transparent
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.font-size-education{
+	font-size: 11px !important;
+}
+
+.input-quote-value{
+	width: 60px !important;
+}
+.delete-modal{
+	width: 30% !important;
+}	
+.input-noteditable{
+	background-color:#FFF !important;
+
+}
+
+tr.blue td a.link-package-detail {
+    color: white;
+}
+
+.blue{	
+    background-color: #267eca !important;
+    color: white;
+}
+
+.green{
+	background-color: #40ccaf !important; 
+}
+.none{
+	background-color: #dee2e6 !important; 
+	
+}
+/*#amountToPay{
+	width: 63% !important;	
+}
+*/
+.reply-msg{
+	z-index: 1041;
+}
+#resumen{
+	display:none;
+}
+
+.correlative {
+    display: none;
+}
+.ciento-diez{
+	width: 110%;
+}
+
+
+.no-controls::-webkit-outer-spin-button,
+
+.no-controls::-webkit-inner-spin-button {
+
+    -webkit-appearance: none;
+
+    margin: 0;
+
+}
+.no-controls {
+
+    -moz-appearance:textfield;
+
+}
+
+.aling-buttoms{
+	padding-right: 123px;
+}

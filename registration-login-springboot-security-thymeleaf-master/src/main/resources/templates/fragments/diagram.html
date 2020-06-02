@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" 
+xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+
+	<div th:replace="fragments/header :: header-meta"/>
+ 	<div th:replace="fragments/header :: header-css"/>
+ 	         
+</head>
+<div th:replace="fragments/header :: header"/>	
+<div class="container" style="margin-bottom: 96px;">
+	
+	<div class="row justify-content-center">			
+		<div class="col-12 mt-4">
+			<h1 class="admin-search-engine-title stripe-bottom">Votantes</h1>
+		</div>
+		<div class="col-md-12 col-lg-2 mb-3">
+			<label for="zonaVotacion" class="education-label-input">Zona de Votaci&oacute;n</label>							
+			<select name="zonaVotacion" id="zonaVotacion" class="form-control form-control-lg education-custom-select mb-0">
+				<option value="" selected="">Seleccione</option>								
+				<option th:each="z : ${zone}"									
+					th:value="${z.nombreZona}"
+					th:text="${z.nombreZona}" >											
+				</option>
+			</select>
+		</div>
+	</div>
+</div>
+
+
+<canvas id="densityChart" width="600" height="400"></canvas>
+
+<script src="../js/production.js"></script>
+<script src="../js/bootstrap.min.js"></script>	
+<script src="../js/toastr.min.js"></script>
+<script src="../js/Chart.min.js"></script>
+<script src="../js/scripts.js"></script>
+</body>
+
+</html>

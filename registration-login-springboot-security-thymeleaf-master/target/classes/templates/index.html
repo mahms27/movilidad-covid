@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" 
+xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+
+	<div th:replace="fragments/header :: header-meta"/>
+ 	<div th:replace="fragments/header :: header-css"/>
+ 	         
+</head>
+
+	<div th:replace="fragments/header :: header"/>	
+	<!--=====================================
+	MAIN CONTAINER
+	======================================-->
+	<div class="container" style="margin-bottom: 96px;">
+		<form th:action="@{/find-permission}" th:object="${permisos}" method="POST" class="contain-form form-education justify-content-center text-center" id="formBusiness">
+			<div class="row ">			
+				<div class="col-12 mt-4">
+					<h1 class="admin-search-engine-title stripe-bottom">Sistema de verificaci&oacute;n de m&oacute;vilidad en COVID-19</h1>
+				</div>
+				<div class="col-md-12 mt-4">
+					<div class="row justify-content-center">
+					
+						<div class="col-md-12 col-lg-2 mb-3">
+							<label for="tipoDocumento" class="education-label-input">Tipo de Documento</label>							
+							<select name="tipoDocumento" id="tipoDocumento" class="form-control form-control-lg education-custom-select mb-0">
+								<option value="" selected="">Seleccione</option>								
+								<option th:each="t : ${tipoDocumento}"									
+									th:value="${t.descripcion}"
+									th:text="${t.descripcion}" >											
+								</option>
+							</select>
+						</div>
+					
+					
+						<div class="col-md-12 col-lg-3 mb-3">
+							<label for="cedula" class="education-label-input">N&uacute;mero de Cedula</label>
+							<input type="text" class="form-control form-control-lg education-custom-input no-controls" name="cedula" id="cedula">
+						</div>
+
+					</div>
+					<div class="row justify-content-center aling-buttoms">						
+					<div class="row mt-3">
+						<div class="col-md-12 col-lg-9 mb-3 text-right" style="margin-right: -30px;">
+							<button type="button" class="btn btn-custom-primary ml-3" data-js="searchBusiness"><span class="text-btn-pay">Verificar</span></button>
+							
+						</div>
+
+						<div class="col-md-12 col-lg-1 mb-3 text-right">
+							<button type="button" class="btn btn-custom-primary ml-3" data-js="clearField"><span class="text-btn-pay">Limpiar</span></button>
+						</div>
+
+					</div>
+					</div>
+				<div id="result-search">
+
+				</div>
+			</div>
+			<input type="hidden" name="size" id="size" value="">
+			<input type="hidden" name="page" id="page" value="">			
+		</form>
+	</div>
+	
+	<!--====  End main container  ====-->
+
+	<footer class="main-footer">
+		<div class="container">
+			<div class="row">
+				<div class="center-footer">
+					<div class="row ftext">
+						<div class="col-12">
+							<img src="../img/yotecuido.jpg" alt="Logo Latitud 90">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="../js/production.js"></script>
+	<script src="../js/bootstrap.min.js"></script>	
+	<script src="../js/toastr.min.js"></script>
+	<script src="../js/scripts.js"></script>
+	<script src="../js/Chart.min.js"></script>
+	
+
+</body>
+
+</html>
