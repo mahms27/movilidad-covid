@@ -1,0 +1,7 @@
+version: "3"
+services:
+  webapp:
+    build: .
+    image: app:v1
+    volumes:
+      - "/root/.m2:/root/.m2"
