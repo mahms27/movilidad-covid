@@ -2865,3 +2865,11 @@ tr.blue td a.link-package-detail {
 .aling-buttoms{
 	padding-right: 123px;
 }
+
+.admin-search-engine-title-h4{
+	font-size: 1rem;
+    font-weight: 700;
+    background: linear-gradient(-45deg, #3db3c5, #274685);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
