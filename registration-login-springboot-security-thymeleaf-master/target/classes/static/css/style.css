@@ -2042,11 +2042,17 @@ a[data-js="uploadList"] {
 	.w-25 {
 		width: 35% !important;
 	}
+	.tr-hidden-colum {
+		display:none;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
 	.container-data-package span {
 		width: 45%;
+	}
+	.tr-hidden-colum {
+		display:none;
 	}
 }
 
@@ -2878,3 +2884,6 @@ tr.blue td a.link-package-detail {
     -webkit-text-fill-color: transparent;
 }
 
+.tr-hidden-colum {
+	display:none;
+}

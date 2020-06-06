@@ -29,14 +29,14 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 								<option value="" selected="">Seleccione</option>								
 								<option th:each="t : ${tipoDocumento}"									
 									th:value="${t.descripcion}"
-									th:text="${t.descripcion}" >											
+									th:text="${t.texto}" >											
 								</option>
 							</select>
 						</div>
 					
 					
 						<div class="col-md-12 col-lg-3 mb-3">
-							<label for="cedula" class="education-label-input">N&uacute;mero de Cedula</label>
+							<label for="cedula" class="education-label-input">N&uacute;mero de Documento</label>
 							<input type="text" class="form-control form-control-lg education-custom-input no-controls" name="cedula" id="cedula">
 						</div>
 
