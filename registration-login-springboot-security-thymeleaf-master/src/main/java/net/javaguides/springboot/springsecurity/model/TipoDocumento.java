@@ -13,6 +13,8 @@ public class TipoDocumento {
 	private Integer id;
 	
 	private String descripcion;
+	
+	private String texto;
 
 	public TipoDocumento() {
 	}
@@ -31,6 +33,14 @@ public class TipoDocumento {
 
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
+	}
+
+	public String getTexto() {
+		return texto;
+	}
+
+	public void setTexto(String texto) {
+		this.texto = texto;
 	}
 	
 	

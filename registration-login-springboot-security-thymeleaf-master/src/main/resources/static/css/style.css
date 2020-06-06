@@ -2042,11 +2042,17 @@ a[data-js="uploadList"] {
 	.w-25 {
 		width: 35% !important;
 	}
+	.tr-hidden-colum {
+		display:none;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
 	.container-data-package span {
 		width: 45%;
+	}
+	.tr-hidden-colum {
+		display:none;
 	}
 }
 
@@ -2371,6 +2377,10 @@ a[data-js="uploadList"] {
 
 	.table-education-custom .thead-education-custom {
 		display: none;
+	}
+	
+	.tr-education-custom {
+    	display: none !important ;
 	}
 
 	.table-education-custom tr {
@@ -2864,4 +2874,16 @@ tr.blue td a.link-package-detail {
 
 .aling-buttoms{
 	padding-right: 123px;
+}
+
+.admin-search-engine-title-h4{
+	font-size: 1rem;
+    font-weight: 700;
+    background: linear-gradient(-45deg, #3db3c5, #274685);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tr-hidden-colum {
+	display:none;
 }

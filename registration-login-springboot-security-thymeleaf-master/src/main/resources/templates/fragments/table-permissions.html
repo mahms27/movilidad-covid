@@ -19,17 +19,24 @@
 									<th scope="col" class="text-left">Estado</th>
 									</tr>
 								</thead>
-								<tbody>
-									<tr th:each="permiso, iter : ${permisos.content}">
+								<tbody >
+									<tr  th:each="permiso, iter : ${permisos.content}" >
 										<!--  <td class="text-left" th:text="${negocio.consecutivo}" th:attr="id=${negocio.consecutivo}"><span class="item-title">Consecutivo</span></td>-->
-										<td class="text-left" th:attr="id=${permiso.cedula}" th:text="${permiso.cedula}"><span class="item-title">N&uacute;mero de Cedula</span>1140826446</td>
-										<td class="text-left" th:attr="id=${permiso.nombreApellido}" th:text="${permiso.nombreApellido}"><span class="item-title">N&uacute;mero de Cedula</span>1140826446</td>
-										<td class="text-left" th:text="${permiso.tipo}"><span class="item-title">Tipo</span>Tipo</td>
-										<td class="text-left" th:text="${permiso.placa}"><span class="item-title">Placa</span>Placa</td>
-										<td class="text-left" th:text="${permiso.entidad}"><span class="item-title">Entidad</span>Entidad</td>
-										<td class="text-left" th:text="${permiso.excepciones}"><span class="item-title">Excepciones</span>Excepciones</td>
-										<td class="text-left" th:text="${permiso.estado}"><span class="item-title">Estado</span>Estado</td>																																						
-									</tr>	
+										<td class="text-left tr-education-custom" th:attr="id=${permiso.cedula}" th:text="${permiso.cedula}"><span class="item-title">N&uacute;mero de Cedula</span>1140826446</td>
+										<td class="text-left tr-education-custom" th:attr="id=${permiso.nombreApellido}" th:text="${permiso.nombreApellido}"><span class="item-title">N&uacute;mero de Cedula</span>1140826446</td>
+										<td class="text-left tr-education-custom" th:text="${permiso.tipo}"><span class="item-title">Tipo</span>Tipo</td>
+										<td class="text-left tr-education-custom" th:text="${permiso.placa}"><span class="item-title">Placa</span>Placa</td>
+										<td class="text-left tr-education-custom" th:text="${permiso.entidad}"><span class="item-title">Entidad</span>Entidad</td>
+										<td class="text-left tr-education-custom" th:text="${permiso.excepciones}"><span class="item-title">Excepciones</span>Excepciones</td>
+										<td class="text-left tr-education-custom" th:text="${permiso.estado}"><span class="item-title">Estado</span>Estado</td>																																						
+
+										<!--  <td class="text-left" th:text="${negocio.consecutivo}" th:attr="id=${negocio.consecutivo}"><span class="item-title">Consecutivo</span></td>-->
+										<td class="text-left tr-hidden-colum" th:attr="id=${permiso.cedula}" th:text="${'Documento: ' +permiso.cedula}"><span class="item-title">N&uacute;mero de Cedula</span>1140826446</td>
+										<td class="text-left tr-hidden-colum" th:attr="id=${permiso.nombreApellido}" th:text="${'Nombre: ' +permiso.nombreApellido}"><span class="item-title">N&uacute;mero de Cedula</span>1140826446</td>
+										<td class="text-left tr-hidden-colum" th:text="${'Entidad: '+permiso.entidad}"><span class="item-title">Entidad</span>Entidad</td>
+										<td class="text-left tr-hidden-colum" th:text="${'Excepci&oacute;n: '+permiso.excepciones}"><span class="item-title">Excepciones</span>Excepciones</td>
+										<td class="text-left tr-hidden-colum" th:text="${'Permiso: '+permiso.estado}"><span class="item-title">Estado</span>Estado</td>																																						
+									</tr>		
 								</tbody>
 
 							</table>
