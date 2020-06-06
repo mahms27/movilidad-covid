@@ -2372,6 +2372,10 @@ a[data-js="uploadList"] {
 	.table-education-custom .thead-education-custom {
 		display: none;
 	}
+	
+	.tr-education-custom {
+    	display: none !important ;
+	}
 
 	.table-education-custom tr {
 		display: inline-block;
@@ -2873,3 +2877,4 @@ tr.blue td a.link-package-detail {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
