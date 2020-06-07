@@ -15,4 +15,6 @@ public interface PersmisosRepository extends JpaRepository<Permisos, Long>{
 	 @Query(value = "select * from movilidad.permisos where cedula = ?1 and tipo_documento =?2", nativeQuery = true)
 	List<Permisos> findByIdentification(String identification, String tipoDocumento);
 
+	 @Query(value = "select * from movilidad.permisos where consecutivo = ?1", nativeQuery = true)
+	Permisos findByConsecutive(Integer consecutive);
 }

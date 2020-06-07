@@ -140,9 +140,6 @@ if($("idCliente").val()===''){
 	$('#createBusinessCustomer').val('');	
 }
 $("button[data-js='createBusinessSave']").on("click", function() {
-	$('#idZona').prop('disabled', false);
-	$('#anio').prop('disabled', false);
-	$('#estado').prop('disabled', false);	
     createBussinesObjectAjax("#formBusiness", "formBusiness");
 });
 
@@ -152,6 +149,11 @@ INPUT MASK
 
 $(document).ready(function(){
 
+	$("#correct").css("display", "none");
+	$("#error").css("display", "none");
+    if ($('#tipoDoc_seleccionado').val() != "") {
+        document.ready = document.getElementById("tipoDocumento").value = $('#tipoDoc_seleccionado').val();
+    }
     $(document).on("click mouseover", ".menu-ppal .main-nav", function() {
         $('.menu-ppal ul li ul').removeClass('active');
         $(this).next('ul').toggleClass('active', 500);
@@ -273,3 +275,48 @@ window.addEventListener("load", function() {
 	    e.preventDefault();
 	  }
 	}
+	
+	
+	function createBussinesObjectAjax(param, option) {
+	    console.log("Ejecutando createBussinesObjectAjax")
+	    if ($(param).valid()) {
+	        var post_url = $(param).attr("action");
+	        var request_method = $(param).attr("method");
+
+	        /*var form_data = $(param).serialize();
+	        console.log("form_data: " +JSON.stringify(form_data));*/
+	        var form_data = getAllFormToJSON(param);
+	        console.log("form_data: " + JSON.stringify(form_data));
+	        var data_value = "";
+
+	        $.ajax({
+	            url: post_url,
+	            type: request_method,
+	            data: form_data,
+	        }).done(function (data) {
+	            if (data.data != null) {
+	                data_value = data.data;
+	            }
+	            $("#correct").css("display", "block");
+	        }).fail(function (jqXHR, textStatus) {
+	        	$("#error").css("display", "block");
+	        });
+	    }
+
+	}
+	
+	function getAllFormToJSON(param) {
+	    var obj = {};
+
+	    $(param+" .form-control").each(function () {
+	        obj[$(this).attr('name')] = $(this).val();
+	    });
+	    console.log("Dta fotm: " + JSON.stringify(obj));
+	    return obj;
+	}
+
+	$(function () {
+	    if ($('#tipoDoc_seleccionado').val() != "") {
+	        document.ready = document.getElementById("tipoDocumento").value = $('#tipoDoc_seleccionado').val();
+	    }
+	});

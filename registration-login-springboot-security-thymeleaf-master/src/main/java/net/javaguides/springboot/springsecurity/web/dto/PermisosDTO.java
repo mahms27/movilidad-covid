@@ -23,6 +23,8 @@ private Integer consecutivo;
 	private String tipoDocumento;
 	
 	private String excepciones;
+	
+	private String operacion;
 
 	public PermisosDTO() {
 		
@@ -114,6 +116,14 @@ private Integer consecutivo;
 
 	public void setExcepciones(String excepciones) {
 		this.excepciones = excepciones;
+	}
+
+	public String getOperacion() {
+		return operacion;
+	}
+
+	public void setOperacion(String operacion) {
+		this.operacion = operacion;
 	}
 	
 }

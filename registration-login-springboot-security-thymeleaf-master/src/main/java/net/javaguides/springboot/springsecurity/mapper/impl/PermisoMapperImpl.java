@@ -34,4 +34,11 @@ public class PermisoMapperImpl implements  PermisosMapper{
 		return listaPermisos;
 	}
 
+	@Override
+	public Permisos toEntity(PermisosDTO pDTO) {
+		ModelMapper modelMapper = new ModelMapper();
+		Permisos pVO = modelMapper.map(pDTO, Permisos.class);		
+		return pVO;
+	}
+
 }

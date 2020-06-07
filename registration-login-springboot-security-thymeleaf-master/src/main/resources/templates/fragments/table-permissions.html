@@ -17,6 +17,7 @@
 									<th scope="col" class="text-left">Entidad</th>
 									<th scope="col" class="text-left">Excepciones</th>
 									<th scope="col" class="text-left">Estado</th>
+									<th sec:authorize="hasAnyAuthority('ADMIN')" scope="col" class="text-left">Acci&oacute;n</th>
 									</tr>
 								</thead>
 								<tbody >
@@ -29,7 +30,7 @@
 										<td class="text-left tr-education-custom" th:text="${permiso.entidad}"><span class="item-title">Entidad</span>Entidad</td>
 										<td class="text-left tr-education-custom" th:text="${permiso.excepciones}"><span class="item-title">Excepciones</span>Excepciones</td>
 										<td class="text-left tr-education-custom" th:text="${permiso.estado}"><span class="item-title">Estado</span>Estado</td>																																						
-
+										<td sec:authorize="hasAnyAuthority('ADMIN')" class="text-left"><span class="item-title">Acción</span><a th:href='@{/movilidad/actualizar(id=${permiso.consecutivo})}' class="link-package-detail" data-js="modifyBusiness">Actualizar</a></td>
 										<!--  <td class="text-left" th:text="${negocio.consecutivo}" th:attr="id=${negocio.consecutivo}"><span class="item-title">Consecutivo</span></td>-->
 										<td class="text-left tr-hidden-colum" th:attr="id=${permiso.cedula}" th:text="${'Documento: ' +permiso.cedula}"><span class="item-title">N&uacute;mero de Cedula</span>1140826446</td>
 										<td class="text-left tr-hidden-colum" th:attr="id=${permiso.nombreApellido}" th:text="${'Nombre: ' +permiso.nombreApellido}"><span class="item-title">N&uacute;mero de Cedula</span>1140826446</td>

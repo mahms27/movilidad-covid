@@ -33,14 +33,19 @@
     ======================================-->
     <header class="container main-header">
         <div class="row">
-            <div class="col-12">   
+            <div class="col-8">   
    				<a href="#" class="education-link-logo">
 					<img src="../img/logo.png" alt="Logo Latitud 90">
 				</a>         
                 <span class="admin-header-title">
-
+				
+            </div>
+            <div class="col-2"> 
+            	<a sec:authorize="isAuthenticated()" th:href="@{/logout}">Cerrar Sesi&oacute;n</a>
             </div>
         </div>
+        
+		
     </header>
     <!--====  End header  ====-->
 </div>

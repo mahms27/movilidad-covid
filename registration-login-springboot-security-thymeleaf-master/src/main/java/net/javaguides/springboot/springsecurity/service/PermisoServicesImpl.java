@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import net.javaguides.springboot.springsecurity.mapper.impl.PermisoMapperImpl;
+import net.javaguides.springboot.springsecurity.model.Permisos;
 import net.javaguides.springboot.springsecurity.repository.PersmisosRepository;
 import net.javaguides.springboot.springsecurity.web.dto.PermisosDTO;
 
@@ -61,7 +62,28 @@ public class PermisoServicesImpl implements PermisosServices{
 		return permissionPage;
 	}
 
+	@Override
+    @Transactional
+	public PermisosDTO save(PermisosDTO pDTO) {
+		PermisosDTO pDToResponse = null;
+		try {
+			Permisos pVo = mapper.toEntity(pDTO);
+			if(pVo.getConsecutivo() == null) {
+				em.persist(pVo);
+			}else {
+				em.merge(pVo);
+			}
+			pDToResponse = mapper.convertToDto(pVo);
+		} catch (Exception e) {
+			System.out.print(e);
+		}
+		return pDToResponse;
+	}
 
+	@Override
+	public PermisosDTO findconsecutive(Integer cons) {
+		return mapper.convertToDto(repo.findByConsecutive(cons));
+	}
 
 
 

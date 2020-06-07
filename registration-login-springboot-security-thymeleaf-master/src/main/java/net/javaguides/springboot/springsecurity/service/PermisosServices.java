@@ -12,9 +12,11 @@ public interface PermisosServices {
 	
 	PermisosDTO findByCedula(String cedula);
 	
-	List<PermisosDTO> findIdentification(String identification, String tipoDocumento);
+	List<PermisosDTO> findIdentification(String idenNum, String docType);
 	
 	Page<PermisosDTO> paginated(Pageable pageable,PermisosDTO p);
 	
-
+	PermisosDTO save(PermisosDTO pDTO);
+	
+	PermisosDTO  findconsecutive(Integer cons);
 }

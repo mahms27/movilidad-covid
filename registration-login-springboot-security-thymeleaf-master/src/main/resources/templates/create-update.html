@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" 
+xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+
+	<div th:replace="fragments/header :: header-meta"/>
+ 	<div th:replace="fragments/header :: header-css"/>
+ 	         
+</head>
+
+	<div th:replace="fragments/header :: header"/>	
+	<!--=====================================
+	MAIN CONTAINER
+	======================================-->
+	<div class="container" style="margin-bottom: 96px;">
+		<form  th:action="@{/movilidad/create-permission}" th:object="${permiso}" method="POST" class="contain-form form-education" id="formBusiness">
+			<div class="row justify-content-center">			
+				<div class="col-12 mt-4">
+					<h1 class="admin-search-engine-title stripe-bottom">Gestionar Permiso</h1>
+				</div>
+				<div class="col-md-12 mt-4"> 
+					<div class="row">
+						<div class="col-md-12 col-lg-4 mb-3">
+							<label for="createBusinessCode" class="education-label-input">Consecutivo:</label>
+							<input type="text" class="form-control form-control-lg education-custom-input header-bussines" th:field="*{consecutivo}" readonly>
+						</div>
+
+						<div class="col-md-12 col-lg-4 mb-3">
+						<input type="hidden" id="tipoDoc_seleccionado" th:value="*{tipoDocumento}">
+							<label for="tipoDocumento" class="education-label-input">Tipo Documento:</label>
+							<select name="tipoDocumento" id="tipoDocumento" class="form-control form-control-lg education-custom-select mb-0 header-bussines">
+								<option value="" selected="">Seleccione</option>
+								<option th:each="tipoDoc : ${tipoDocumento}" th:value="${tipoDoc.descripcion}" th:text="${tipoDoc.texto}" />
+							</select>
+						</div>
+	
+						<div class="col-md-12 col-lg-4 mb-3">
+							<label for="cedula" class="education-label-input">N&uacute;mero de Documento:</label>
+							<input type="text" class="form-control form-control-lg education-custom-input letter-uppercase header-bussines" th:field="*{cedula}">
+						</div>					
+					</div>	
+					<div class="row">
+						<div class="col-md-12 col-lg-4 mb-3">
+								<label for="nombreApellido" class="education-label-input">Nombre del Beneficiario:</label>
+								<input type="text" class="form-control form-control-lg education-custom-input letter-uppercase header-bussines" th:field="*{nombreApellido}">
+							</div>
+	
+							<div class="col-md-12 col-lg-4 mb-3">
+								<label for="entidad" class="education-label-input">Entidad Beneficiaria:</label>
+								<input type="text" class="form-control form-control-lg education-custom-input letter-uppercase header-bussines" th:field="*{entidad}">
+							</div>
+	
+							<div class="col-md-12 col-lg-4 mb-3">
+								<label for="excepciones" class="education-label-input">Excepci&oacute;n:</label>
+								<input type="text" class="form-control form-control-lg education-custom-input letter-uppercase header-bussines" th:field="*{excepciones}">
+							</div>									
+
+					</div>
+					<div class="row">
+					
+							<div class="col-md-12 col-lg-4 mb-3">
+								<label for="tipo" class="education-label-input">Tipo de Movilidad:</label>
+								<input type="text" class="form-control form-control-lg education-custom-input letter-uppercase header-bussines" th:field="*{tipo}">
+							</div>
+
+							<div class="col-md-12 col-lg-4 mb-3">
+								<label for="placa" class="education-label-input">Placa:</label>
+								<input type="text" class="form-control form-control-lg education-custom-input letter-uppercase header-bussines" th:field="*{placa}">
+							</div>
+							
+							<div class="col-md-12 col-lg-4 mb-3">
+								<label for="Estado" class="education-label-input">Estado:</label>
+								<input type="text" class="form-control form-control-lg education-custom-input letter-uppercase header-bussines" th:field="*{estado}">
+							</div>		
+					</div>	
+					
+					<div class="row">
+
+						<div sec:authorize="hasAnyAuthority('ADMIN')" class="col-md-12 col-lg-4 mb-3 text-center" style="margin-top:30px;">
+								<button type="button" class="btn btn-custom-primary ml-3" data-js="createBusinessSave"><span class="text-btn-pay">Guardar</span></button>
+						</div>
+						
+						<div class="col-md-12 col-lg-4 mb-3 text-center" style="margin-top:30px;">
+							<button  type="button" class="btn btn-custom-primary ml-3" data-js="passenger" th:onclick="|window.location.href='/movilidad/crear'|"><span class="text-btn-pay"> Crear Nuevo</span></button>
+						</div>	
+						
+						<div class="col-md-12 col-lg-4 mb-3 text-center" style="margin-top:30px;">
+							<button  type="button" class="btn btn-custom-primary ml-3" data-js="passenger" th:onclick="|window.location.href='/movilidad/permisos'|"><span class="text-btn-pay">Buscar</span></button>
+						</div>						
+
+					</div>
+				    <div class="alert alert-success fade show" id="correct"  role="alert">
+				        <strong>Atenci&oacute;n</strong> Operacion Exitosa.
+				    </div>
+				    
+   				    <div class="alert alert-danger fade show" id="error"  role="alert">
+				        <strong>Atenci&oacute;n</strong> Operacion Fallida.
+				    </div>	
+						
+		</form>
+	</div>
+	
+	<!--====  End main container  ====-->
+
+	<footer class="main-footer">
+		<div class="container">
+			<div class="row">
+				<div class="center-footer">
+					<div class="row ftext">
+						<div class="col-12">
+							<img src="../img/yotecuido.jpg" alt="Logo Latitud 90">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="../js/toastr.min.js"></script>
+	<script src="../js/production.js"></script>
+	<script src="../js/bootstrap.min.js"></script>	
+	<script src="../js/Chart.min.js"></script>
+	<script src="../js/scripts.js"></script>
+	
+
+</body>
+
+</html>

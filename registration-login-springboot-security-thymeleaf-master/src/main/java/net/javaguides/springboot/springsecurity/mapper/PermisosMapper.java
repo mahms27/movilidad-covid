@@ -11,4 +11,6 @@ public interface PermisosMapper {
 	PermisosDTO convertToDto(Permisos p);
 	
 	List<PermisosDTO> convertToDtoList(List<Permisos> permisos);
+	
+	Permisos toEntity(PermisosDTO pDTO); 
 }
