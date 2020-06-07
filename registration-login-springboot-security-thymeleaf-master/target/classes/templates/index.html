@@ -43,16 +43,16 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 					</div>
 					<div class="row justify-content-center aling-buttoms">						
 					<div class="row mt-3">
-						<div class="col-md-12 col-lg-9 mb-3 text-right" style="margin-right: -30px;">
+						<div class="col-md-12 col-lg-4 mb-3 text-right" style="margin-right: -30px;">
 							<button type="button" class="btn btn-custom-primary ml-3" data-js="searchBusiness"><span class="text-btn-pay">Verificar</span></button>
 							
 						</div>
 
-						<div class="col-md-12 col-lg-1 mb-3 text-right">
+						<div class="col-md-12 col-lg-4 mb-3 text-right">
 							<button type="button" class="btn btn-custom-primary ml-3" data-js="clearField"><span class="text-btn-pay">Limpiar</span></button>
 						</div>
 						
-						<div class="col-md-12 col-lg-1 mb-3 text-center" style="margin-top:30px;">
+						<div class="col-md-12 col-lg-4 mb-3 text-center" >
 							<button sec:authorize="hasAnyAuthority('ADMIN')"  type="button" class="btn btn-custom-primary ml-3" data-js="passenger" th:onclick="|window.location.href='/movilidad/crear'|"><span class="text-btn-pay"> Crear Nuevo</span></button>
 						</div>	
 
