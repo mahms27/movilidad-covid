@@ -109,6 +109,7 @@ BOTON LIMPIAR -- FRILTRO
 $("button[data-js='clearField']").on("click", function() {
 	$("#formBusiness")[0].reset();
     $("#result-search").css("display", "none");
+    document.ready = document.getElementById("tipoDocumento").value = "";
 });
 
 
