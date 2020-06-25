@@ -84,6 +84,15 @@ $("button[data-js='searchBusiness']").on("click", function() {
 });
 
 
+function isPage(page) {
+    var resp = false;
+    var url = window.location.pathname;
+    if (url == page) {
+        resp = true;
+    }
+    return resp;
+}
+
 function paso(cedula){
 	var  res = "No";
     $.ajax({
@@ -152,9 +161,12 @@ $(document).ready(function(){
 
 	$("#correct").css("display", "none");
 	$("#error").css("display", "none");
-    if ($('#tipoDoc_seleccionado').val() != "") {
-        document.ready = document.getElementById("tipoDocumento").value = $('#tipoDoc_seleccionado').val();
-    }
+	if($('#tipoDoc_seleccionado').length >0){
+	    if ($('#tipoDoc_seleccionado').val() != "") {
+	        document.ready = document.getElementById("tipoDocumento").value = $('#tipoDoc_seleccionado').val();
+	    }
+	}
+
     $(document).on("click mouseover", ".menu-ppal .main-nav", function() {
         $('.menu-ppal ul li ul').removeClass('active');
         $(this).next('ul').toggleClass('active', 500);
@@ -173,6 +185,9 @@ $('body').on('click',function() {
  $(".main-nav-container .main-nav.active").removeClass('active');
  
 });	
+if (isPage('/movilidad/parametros')) {
+	genericFuntionAjax("#formBusiness");
+}
            
 });
 
