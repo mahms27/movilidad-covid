@@ -62,8 +62,8 @@
 						</nav>						
 					</div>
 					<div th:if="${#lists.isEmpty(permisos)}">
-					    <div class="alert alert-warning alert-dismissible fade show" id="tarifasnotfound"  role="alert">
-					        <strong>Atención!</strong> No se encontraron resultados asociados a la consulta.
+					    <div class="alert alert-danger alert-dismissible fade show" id="tarifasnotfound"  role="alert">
+					       <strong>Atención!</strong><p th:text="${'el n&uacute;mero de documento '+ identificationNumbers +'  no tiene permitida la circulaci&oacute;n'}">No se encontraron resultados asociados a la consulta.</p>
 					    </div>
 					</div>					
 </html>

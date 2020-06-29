@@ -103,9 +103,9 @@ public class MovilidadController {
                     .collect(Collectors.toList());
             model.addAttribute("pageNumbers", pageNumbers);
             model.addAttribute("currentPage", currentPage);
-            model.addAttribute("permisos", permission);
+            model.addAttribute("permisos", permission);     
         }else {
-        	
+        	model.addAttribute("identificationNumbers", p.getCedula());
         }
     	return "fragments/table-permissions";
     }
